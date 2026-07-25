@@ -1,0 +1,439 @@
+/* contact.html link with css  */
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(211, 211, 211);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* .nav{
+   background-color:rgb(196, 196, 122);
+} */
+.logo img {
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.logo img:hover {
+  transform: scale(1.12);
+  background-color: orange;
+  cursor: pointer;
+}
+.items {
+  background-color: orange;
+  list-style: none;
+  margin: 0;
+  margin-left: auto;
+  height: 48px;
+  text-align: center;
+  padding-top: 25px;
+
+  /* width: 50%; */
+}
+.item {
+  display: inline;
+}
+.item a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: rgb(245, 238, 238);
+  padding: 0 16px;
+  border-radius: 4px;
+}
+a:hover {
+  background-color: rgb(10, 7, 1);
+  color: white;
+  font-size: 22px;
+  box-shadow: 0px 10px 10px;
+}
+a:active {
+  font-size: 25px;
+}
+.contact {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 25px;
+  color: navy;
+  padding: 30px;
+}
+.contact hr {
+  text-decoration: none;
+  border-bottom: 1px solid orange;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+/* <!-- contact details & address with icon --> */
+.dev {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 40px 0px 40px;
+}
+.cards {
+  text-align: center;
+  font-family: sans-serif;
+  color: navy;
+  padding: 20px 40px 0px 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.8);
+}
+.cards:hover {
+  transform: scale(1.09);
+  color: orange;
+  box-shadow: 0px 10px 20px rgb(218, 150, 24);
+}
+.icon i {
+  font-size: 50px;
+  color: orange;
+}
+.icon i:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  color: black;
+}
+.cards h3 {
+  font-size: 30px;
+}
+.cards p {
+  font-size: 20px;
+}
+.get {
+  text-align: center;
+  font-family: sans-serif;
+  color: navy;
+  padding: 30px;
+}
+.get h1 {
+  font-size: 40px;
+  padding: 20px;
+}
+.get hr {
+  text-decoration: none;
+  border-bottom: 1px solid orange;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+/* sendrequest वाले फ़ॉर्म के बाहर का डार्क डिब्बा */
+.sendsms {
+  background-color: #1a1a1a; /* डार्क बैकग्राउंड */
+  max-width: 500px;
+  margin: 50px auto 20px auto;
+
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.sendsms:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+/* this is a form detail css */
+/* सेंड एसएमएस फ़ॉर्म के अंदर के सभी input और textarea */
+.sendsms input,
+.sendsms textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  background-color: #262626; /* इनपुट बॉक्स का डार्क कलर */
+  border: 1px solid #333333;
+  border-radius: 6px;
+  color: #ffffff; /* टाइपिंग का सफेद रंग */
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* इनपुट बॉक्स के अंदर के धुंधले टेक्स्ट (Placeholder) का रंग */
+.sendsms input::placeholder,
+.sendsms textarea::placeholder {
+  color: #666666;
+}
+
+/* सेंड एसएमएस फ़ॉर्म का सबमिट बटन (SEND MESSAGE) */
+.sendsms input[type="submit"] {
+  background-color: #007bfe; /* ब्राइट ब्लू कलर */
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+/* बटन पर माउस ले जाने पर (Hover Effect) */
+.sendsms input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Form submission feedback message */
+.form-message {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+  display: none;
+}
+
+.form-message.success {
+  display: block;
+  background-color: #1e7e34;
+  color: #ffffff;
+  border: 1px solid #28a745;
+}
+
+.form-message.error {
+  display: block;
+  background-color: #7e1e1e;
+  color: #ffffff;
+  border: 1px solid #dc3545;
+}
+
+/* ===== FOOTER STYLES ===== */
+.footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  font-family: sans-serif;
+  padding: 60px 40px 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  color: orange;
+  font-size: 22px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-column h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: orange;
+}
+
+.footer-column p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #333;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: orange;
+  color: #1e1e1e;
+  transform: translateY(-3px);
+}
+
+/* Quick Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a:hover {
+  color: orange;
+  padding-left: 5px;
+}
+
+.footer-links a i {
+  font-size: 14px;
+  color: orange;
+}
+
+/* Contact Info */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.contact-info li i {
+  width: 20px;
+  color: orange;
+  font-size: 18px;
+}
+
+.contact-info li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info li a:hover {
+  color: orange;
+}
+
+/* Copyright Bar */
+.footer-bottom {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+.footer-bottom p span {
+  color: orange;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+}
+
+/* ===== MOBILE RESPONSIVE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  /* ---- NAVBAR ---- */
+  .navbar {
+    flex-direction: column !important;
+    padding: 10px 20px !important;
+    gap: 10px;
+  }
+  .items {
+    margin-left: 0 !important;
+    padding-top: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+  }
+  .item a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .logo img {
+    width: 100px;
+  }
+
+  /* ---- CONTACT TITLE ---- */
+  .contact {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .contact h1 {
+    font-size: 28px;
+  }
+  .contact hr {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  /* ---- DEV (Contact Cards) ---- */
+  .dev {
+    flex-direction: column;
+    margin: 10px 15px;
+    gap: 15px;
+  }
+  .cards {
+    padding: 15px;
+  }
+  .cards h3 {
+    font-size: 22px;
+  }
+  .cards p {
+    font-size: 16px;
+  }
+
+  /* ---- GET IN TOUCH ---- */
+  .get h1 {
+    font-size: 28px;
+  }
+  .get hr {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  /* ---- FORM ---- */
+  .sendsms {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+}

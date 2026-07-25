@@ -1,0 +1,438 @@
+/* this is my portpolio.html.css */
+body {
+  background-color: white;
+  margin: 0;
+}
+
+.logo img {
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.logo img:hover {
+  transform: scale(1.12);
+  background-color: orange;
+  cursor: pointer;
+}
+.items {
+  background-color: orange;
+  list-style: none;
+  margin: 0;
+  margin-left: auto;
+  height: 48px;
+  text-align: center;
+  padding-top: 25px;
+
+  /* width: 50%; */
+}
+.item {
+  display: inline;
+}
+.item a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: rgb(245, 238, 238);
+  padding: 0 16px;
+  border-radius: 4px;
+}
+a:hover {
+  background-color: rgb(10, 7, 1);
+  color: white;
+  font-size: 22px;
+  box-shadow: 0px 10px 10px;
+}
+a:active {
+  font-size: 25px;
+}
+/* this is stertup portpolio wirting */
+
+.port {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 40px 30px 0px 30px;
+  color: navy;
+}
+.port h1 {
+  font-size: 40px;
+  padding: 30px;
+}
+.port h2 {
+  font-size: 30px;
+  padding: 20px;
+}
+.port p {
+  font-size: 20px;
+  padding: 20px;
+}
+.port hr {
+  text-decoration: none;
+  border: 1px solid orange;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+/* 1. Gallery Section ko aamne-saamne set karne ke liye */
+.gallrey {
+  display: flex;
+  justify-content: space-between; /* Left aur Right ke beech me barabar gap rakhega */
+  align-items: flex-start; /* Dono blocks ko upar se barabar rakhega */
+  max-width: 1000px; /* Page ki total width */
+  margin: 40px auto; /* Page ke bilkul center me lane ke liye */
+  padding: 0 20px;
+}
+
+/* 2. Left side waali Badi Photo ka block */
+.photo {
+  width: 65%; /* Yeh screen ka 60% hissa lega */
+  margin-right: 20px;
+}
+
+.photo img {
+  width: 100%; /* Image apne box ke hisab se full badi ho jayegi */
+  height: 370px;
+  border-radius: 8px; /* Corners round karne ke liye */
+}
+.photo img:hover {
+  transform: scale(1.01);
+}
+
+/* 3. Right side waala Card block (Do choti images ke liye) */
+.card {
+  display: flex;
+  flex-direction: column; /* Dono images ko automatic ek ke niche ek khada karega */
+  gap: 20px; /* Dono choti images ke beech ka gap */
+  width: 35%; /* Yeh screen ka 35% hissa lega */
+}
+
+.card img {
+  width: 100%; /* Yeh choti images apne 35% waale box me fit rahengi */
+  height: 175px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sunder look ke liye halki shadow */
+}
+.card img:hover {
+  transform: scale(1.01);
+}
+.card2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  height: auto;
+}
+.card2 img {
+  width: 315px;
+  border-radius: 8px;
+}
+.card2 img:hover {
+  transform: scale(1.01);
+}
+.gallrey2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+  overflow: hidden;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 35%;
+  overflow: hidden;
+}
+.card1 img {
+  width: auto;
+  margin: 20px 0px 20px 150px;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card1 img:hover {
+  transform: scale(1.01);
+}
+.photo1 img {
+  width: 80%;
+  margin-right: 80px;
+  padding-left: 0px;
+  height: 400px;
+  margin: 20px 80px 20px 0px;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+.photo1 img:hover {
+  transform: scale(1.01);
+}
+
+/* ===== FOOTER STYLES ===== */
+.footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  font-family: sans-serif;
+  padding: 60px 40px 0;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  color: orange;
+  font-size: 22px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-column h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: orange;
+}
+
+.footer-column p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #333;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: orange;
+  color: #1e1e1e;
+  transform: translateY(-3px);
+}
+
+/* Quick Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a:hover {
+  color: orange;
+  padding-left: 5px;
+}
+
+.footer-links a i {
+  font-size: 14px;
+  color: orange;
+}
+
+/* Contact Info */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.contact-info li i {
+  width: 20px;
+  color: orange;
+  font-size: 18px;
+}
+
+.contact-info li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info li a:hover {
+  color: orange;
+}
+
+/* Copyright Bar */
+.footer-bottom {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+.footer-bottom p span {
+  color: orange;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+}
+
+/* ===== MOBILE RESPONSIVE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  /* ---- NAVBAR ---- */
+  .navbar {
+    flex-direction: column !important;
+    padding: 10px 20px !important;
+    gap: 10px;
+  }
+  .items {
+    margin-left: 0 !important;
+    padding-top: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+  }
+  .item a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .logo img {
+    width: 100px;
+  }
+
+  /* ---- PORTFOLIO TITLE ---- */
+  .port h1 {
+    font-size: 28px;
+  }
+  .port h2 {
+    font-size: 22px;
+  }
+  .port p {
+    font-size: 16px;
+  }
+  .port hr {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  /* ---- GALLERY (Main layout) ---- */
+  .gallrey {
+    flex-direction: column;
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  .photo {
+    width: 100%;
+    margin-right: 0;
+  }
+  .photo img {
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .card img {
+    height: auto;
+  }
+
+  /* ---- CARD2 (Row of 3 images) ---- */
+  .card2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .card2 img {
+    width: 90%;
+    height: auto;
+  }
+
+  /* ---- GALLREY2 (Second gallery layout) ---- */
+  .gallrey2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card1 img {
+    width: 90%;
+    margin: 10px auto;
+    height: auto;
+  }
+  .photo1 {
+    width: 100%;
+    text-align: center;
+  }
+  .photo1 img {
+    width: 90%;
+    margin: 10px auto;
+    height: auto;
+  }
+}

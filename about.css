@@ -1,0 +1,678 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(211, 211, 211);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* .nav{
+   background-color:rgb(196, 196, 122);
+} */
+.logo img {
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.logo img:hover {
+  transform: scale(1.12);
+  background-color: orange;
+  cursor: pointer;
+}
+.items {
+  background-color: orange;
+  list-style: none;
+  margin: 0;
+  margin-left: auto;
+  height: 48px;
+  text-align: center;
+  padding-top: 25px;
+
+  /* width: 50%; */
+}
+.item {
+  display: inline;
+}
+.item a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: rgb(245, 238, 238);
+  padding: 0 16px;
+  border-radius: 4px;
+}
+a:hover {
+  background-color: rgb(10, 7, 1);
+  color: white;
+  font-size: 22px;
+  box-shadow: 0px 10px 10px;
+}
+a:active {
+  font-size: 25px;
+}
+/* this is starting about page structure here */
+.about {
+  text-align: center;
+  color: navy;
+  font-size: 30px;
+  padding: 20px;
+  background-color: white;
+}
+.aboutme {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  background-color: white;
+}
+.mypic {
+  width: 30%;
+  margin-left: 60px;
+  border: 2px solid orange;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: orange;
+}
+.mypic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  background-color: black;
+}
+.mypic img {
+  display: block;
+  width: 280px;
+  height: 340px;
+  padding: 25px 30px 0px 0px;
+  border-radius: 10px;
+}
+.mypic img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.world {
+  width: 70%;
+  margin: 0px 40px 0px 40px;
+  text-align: center;
+  font-family: sans-serif;
+  color: navy;
+}
+.world h3 {
+  font-size: 30px;
+}
+.world hr {
+  text-decoration: none;
+  border-bottom: 1px solid orange;
+  margin-left: 5%;
+  margin-right: 75%;
+}
+.world p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.arts {
+  font-family: sans-serif;
+  text-align: center;
+  color: navy;
+  background-color: white;
+  margin-top: -30px;
+}
+
+.arts h3 {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 60px;
+  padding-top: 20px;
+}
+.arts hr {
+  text-decoration: none;
+  border-bottom: 1px solid orange;
+  margin-left: 5%;
+  margin-right: 75%;
+}
+.arts p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-left: 60px;
+  margin-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* this is my clints list */
+.clints {
+  font-family: sans-serif;
+  text-align: center;
+  color: navy;
+  margin-top: 30px;
+}
+.clints h1 {
+  font-size: 40px;
+  padding: 40px;
+}
+.clints p {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 0px 30px 0px 30px;
+}
+.clints hr {
+  text-decoration: none;
+  border: 1px solid orange;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.gallrey {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px 60px 60px 60px;
+}
+
+.card {
+  text-align: center;
+  color: navy;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* .card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgb(218, 149, 21);
+} */
+.pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.pic img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(238, 129, 5, 0.8);
+}
+.gallrey h1 {
+  font-size: 30px;
+}
+.gallrey p {
+  font-size: 20px;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px;
+}
+.cards {
+  text-align: center;
+  padding: 30px;
+  font-family: sans-serif;
+  color: navy;
+  border-radius: 10px;
+  background-color: white;
+}
+/* .cards:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgb(218, 149, 21);
+} */
+.cl img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.cl img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgb(218, 149, 21);
+}
+.cards h1 {
+  font-size: 30px;
+}
+.cards p {
+  font-size: 20px;
+}
+.news {
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  color: navy;
+  background-color: white;
+}
+.news h1 {
+  font-size: 40px;
+  padding: 30px;
+}
+.news p {
+  font-size: 20px;
+  padding: 20px;
+}
+.news hr {
+  text-decoration: none;
+  border-bottom: 1px solid orange;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 20px;
+}
+.news h3 {
+  font-size: 35px;
+  padding: 20px;
+}
+.subscribe-form input {
+  width: 100%;
+}
+/* 1. Main bahar ka div (Isse pura section page ke beech me aayega) */
+.subscribe {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  margin-top: -60px;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+
+/* 2. Pura form block aur uski maximum chaudaee (width) */
+.cubscribe-form {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* 3. Input group div (Jo input aur button ko ek line me jodega) */
+.input-group {
+  display: flex;
+  width: 100%;
+}
+
+/* 4. Email box ki styling */
+.input-group input[type="email"] {
+  flex: 1;
+  padding: 12px 35px;
+
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Sirf left corners gol honge */
+  outline: none;
+  background-color: rgb(56, 52, 52);
+  color: white;
+}
+.input-group input[type="email"]:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgb(72, 45, 224);
+}
+
+/* 5. Subscribe button ki styling */
+.cubscribe-form input[type="submit"] {
+  padding: 12px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: orange; /* Dark Navy Blue rang */
+  color: white;
+  border: 1px solid orange;
+  border-radius: 10px; /* Sirf right corners gol honge */
+  cursor: pointer;
+  margin-left: 10px;
+}
+.cubscribe-form input[type="submit"]:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: black;
+}
+
+/* Form submission feedback message */
+.form-message {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+  display: none;
+}
+
+.form-message.success {
+  display: block;
+  background-color: #1e7e34;
+  color: #ffffff;
+  border: 1px solid #28a745;
+}
+
+.form-message.error {
+  display: block;
+  background-color: #7e1e1e;
+  color: #ffffff;
+  border: 1px solid #dc3545;
+}
+
+/* ===== FOOTER STYLES ===== */
+.footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  font-family: sans-serif;
+  padding: 60px 40px 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  color: orange;
+  font-size: 22px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-column h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: orange;
+}
+
+.footer-column p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #333;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: orange;
+  color: #1e1e1e;
+  transform: translateY(-3px);
+}
+
+/* Quick Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a:hover {
+  color: orange;
+  padding-left: 5px;
+}
+
+.footer-links a i {
+  font-size: 14px;
+  color: orange;
+}
+
+/* Contact Info */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.contact-info li i {
+  width: 20px;
+  color: orange;
+  font-size: 18px;
+}
+
+.contact-info li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info li a:hover {
+  color: orange;
+}
+
+/* Copyright Bar */
+.footer-bottom {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+.footer-bottom p span {
+  color: orange;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+}
+
+/* ===== MOBILE RESPONSIVE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  /* ---- NAVBAR ---- */
+  .navbar {
+    flex-direction: column !important;
+    padding: 10px 20px !important;
+    gap: 10px;
+  }
+  .items {
+    margin-left: 0 !important;
+    padding-top: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+  }
+  .item a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .logo img {
+    width: 100px;
+  }
+
+  /* ---- ABOUT PAGE TITLE ---- */
+  .about {
+    font-size: 22px;
+    padding: 15px;
+  }
+  .about h1 {
+    font-size: 28px;
+  }
+
+  /* ---- ABOUT ME SECTION ---- */
+  .aboutme {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mypic {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+  }
+  .mypic img {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+  .world {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .world h3 {
+    font-size: 22px;
+  }
+  .world p {
+    font-size: 16px;
+  }
+
+  /* ---- ARTS SECTION ---- */
+  .arts h3 {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+  .arts p {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* ---- CLIENTS SECTION ---- */
+  .clints h1 {
+    font-size: 28px;
+  }
+  .clints p {
+    font-size: 16px;
+  }
+  .clints hr {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  /* ---- GALLERY (Testimonials Row 1) ---- */
+  .gallrey {
+    flex-direction: column;
+    margin: 30px 20px;
+    gap: 20px;
+  }
+  .gallrey h1 {
+    font-size: 22px;
+  }
+  .gallrey p {
+    font-size: 16px;
+  }
+
+  /* ---- SERVICE (Testimonials Row 2) ---- */
+  .service {
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+  }
+  .cards h1 {
+    font-size: 22px;
+  }
+  .cards p {
+    font-size: 16px;
+  }
+
+  /* ---- NEWS SECTION ---- */
+  .news h1 {
+    font-size: 28px;
+  }
+  .news p {
+    font-size: 16px;
+  }
+  .news hr {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .news h3 {
+    font-size: 24px;
+  }
+
+  /* ---- SUBSCRIBE FORM ---- */
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  .cubscribe-form {
+    flex-direction: column;
+    max-width: 90%;
+    align-items: center;
+  }
+  .input-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .input-group input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .cubscribe-form input[type="submit"] {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 10px;
+  }
+}
