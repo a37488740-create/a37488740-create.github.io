@@ -676,3 +676,134 @@ a:active {
     border-radius: 10px;
   }
 }
+
+section.aboutme {
+  display: flex !important;
+  flex-direction: column !important; /* यह मुख्य सेक्शंस को एक के नीचे एक लाएगा */
+  align-items: flex-start !important;
+  position: relative !important;
+}
+
+/* 2. स्किल्स कंटेनर को पूरी चौड़ाई देने और फ्लोट तोड़ने के लिए */
+.skills-container {
+  width: 100% !important;
+  clear: both !important;
+  margin-top: 50px !important; /* पीले बॉक्स से नीचे बेहतरीन स्पेस */
+  display: block !important;
+}
+
+/* 3. स्किल्स के टाइटल को बाईं तरफ सेट करने के लिए */
+.skills-title {
+  text-align: left !important;
+  margin-bottom: 20px !important;
+  font-size: 1.6rem !important;
+  color: #002060 !important;
+  width: 100% !important;
+  padding-left: 60px;
+}
+
+/* 4. सभी 6 बैज को एक सीधी हॉरिजॉन्टल (Horizontal) लाइन में सजाने के लिए */
+.skills-list {
+  display: flex !important;
+  flex-direction: row !important; /* बैजेस को एक सीधी लाइन में लिटाएगा */
+  justify-content: flex-start !important; /* शुरुआत से अलाइन करेगा */
+  align-items: center !important;
+  gap: 15px !important; /* बैजेस के बीच की दूरी */
+  width: 100% !important;
+  flex-wrap: nowrap !important; /* इन्हें जबरदस्ती एक ही लाइन में रखेगा */
+  overflow-x: auto !important; /* अगर स्क्रीन छोटी हो तो स्क्रॉल हो सके */
+  padding-left: 60px;
+  padding-bottom: 10px;
+}
+
+/* 5. बैज का आकार सही रखने के लिए */
+
+/* स्किल्स के बैजेस को वापस सुंदर और बॉर्डर वाला बनाने के लिए */
+.skill-badge {
+  background-color: #f0f4f8 !important; /* हल्का बैकग्राउंड */
+  color: #002060 !important;
+  padding: 10px 20px !important; /* चारों तरफ जगह */
+  border-radius: 30px !important; /* कैप्सूल जैसा राउंड लुक */
+  border: 1px solid #d1dbe5 !important; /* सुंदर साफ़ बॉर्डर */
+  font-weight: bold !important;
+  font-size: 1rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  white-space: nowrap !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* आइकॉन्स का कलर वापस सेट करने के लिए */
+.skill-badge i {
+  color: #ffc000 !important; /* आपके थीम का पीला रंग */
+  font-size: 1.2rem !important;
+}
+.skills-list :hover {
+  transform: scale(1.02);
+  background-color: navy;
+}
+
+/* मोबाइल स्क्रीन पर 'About Me' के मुख्य हिस्से को वर्टिकल (एक के नीचे एक) करने के लिए */
+@media screen and (max-width: 768px) {
+  /* जो नया div हमने जोड़ा था, उसे मोबाइल पर वर्टिकल फ्लेक्स में बदलें */
+  section.aboutme > div[style*="display: flex"] {
+    flex-direction: column !important; /* यह पीले बॉक्स और टेक्स्ट को एक के नीचे एक लाएगा */
+    align-items: center !important; /* सब कुछ बीच में सेट करेगा */
+    gap: 20px !important; /* दोनों के बीच थोड़ा गैप देगा */
+  }
+
+  /* पीले बॉक्स (mypic) को मोबाइल पर सही आकार देने के लिए */
+  .mypic {
+    width: 150px !important; /* मोबाइल पर बॉक्स का साइज सही रहेगा */
+    height: 150px !important;
+    margin: 0 auto !important; /* स्क्रीन के सेंटर में लाएगा */
+  }
+
+  /* टेक्स्ट वाले हिस्से (world) को मोबाइल पर पूरी चौड़ाई देने के लिए */
+  .world {
+    width: 100% !important;
+    text-align: center !important; /* टेक्स्ट को बीच में अलाइन करेगा */
+    padding: 0 10px !important;
+  }
+
+  /* हेडिंग को मोबाइल पर थोड़ा छोटा और सुंदर रखने के लिए */
+  .world h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* 1. डेस्कटॉप (बड़ी स्क्रीन) के लिए नियम */
+.about-flex-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* 2. मोबाइल (768px से छोटी स्क्रीन) के लिए नियम */
+@media screen and (max-width: 768px) {
+  /* पूरे मुख्य हिस्से को वर्टिकल करें */
+  .about-flex-wrapper {
+    flex-direction: column !important; /* एक के नीचे एक लाएगा */
+    align-items: center !important; /* सेंटर अलाइन करेगा */
+    gap: 25px !important;
+  }
+
+  /* पीले बॉक्स (mypic) को मोबाइल पर वापस लाने और सेंटर करने के लिए */
+  .mypic {
+    display: block !important;
+    width: 150px !important; /* मोबाइल पर बॉक्स का साइज */
+    height: 150px !important;
+    margin: 0 auto !important; /* स्क्रीन के बीच में रखने के लिए */
+  }
+
+  /* टेक्स्ट वाले हिस्से (world) को मोबाइल पर पूरी चौड़ाई देने के लिए */
+  .world {
+    width: 100% !important;
+    text-align: center !important; /* टेक्स्ट बीच में रहेगा */
+    padding: 0 15px !important;
+  }
+}
+
