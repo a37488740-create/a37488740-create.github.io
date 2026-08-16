@@ -1048,3 +1048,119 @@ i:hover {
     padding: 20px;
   }
 }
+
+.hero-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: rgb(211, 211, 211); /* हल्का बैकग्राउंड */
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #002060; /* गहरा नीला रंग */
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* "Get a Free Quote" को सुंदर बटन बनाने के लिए */
+.hero-section .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ffc000; /* मेनू बार जैसा पीला रंग */
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: #e0a800; /* होवर करने पर गहरा पीला */
+}
+
+/* Services Section की मुख्य स्टाइलिंग */
+.services-section {
+  padding: 60px 20px;
+  background-color: #f4f6f9; /* हल्का ग्रे बैकग्राउंड */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #002060;
+  margin-bottom: 40px;
+}
+
+/* 3 बॉक्सेस को एक लाइन में लाने के लिए फ्लेक्सबॉक्स */
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* हर एक सर्विस बॉक्स का सुंदर डिज़ाइन */
+.service-box {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  border-top: 4px solid #ffc000; /* ऊपर आपके थीम की पीली पट्टी */
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/* आइकॉन्स को बड़ा और आकर्षक बनाने के लिए */
+.service-icon {
+  font-size: 3rem;
+  color: #ffc000;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 1.3rem;
+  color: #002060;
+  margin-bottom: 12px;
+}
+
+.service-box p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* इसे अपनी style.css फ़ाइल के सबसे नीचे पेस्ट करें */
+
+@media screen and (max-width: 768px) {
+  /* सर्विसेस ग्रिड को एक के नीचे एक (Vertical) करने के लिए */
+  .services-grid {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+  }
+
+  /* हर एक सर्विस बॉक्स मोबाइल पर पूरी चौड़ाई लेगा */
+  .service-box {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 25px 0 !important; /* हर बॉक्स के नीचे दूरी */
+    box-sizing: border-box !important;
+  }
+}
+
